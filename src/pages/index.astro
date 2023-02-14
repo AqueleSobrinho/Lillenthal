@@ -1,7 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import logo from "../assets/logo.svg";
 ---
 
 <Layout title="Lillenthal">
-  <main>Hello World</main>
+  <div class="">
+    <main class="">
+      <img src={logo} alt="" />
+      <input type="text" placeholder="RM" />
+      <input type="text" placeholder="Password" />
+      Enter as
+      <select name="" id="">
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <button type="submit"> Sign In</button>
+    </main>
+    <aside class="">
+      <div>
+        <img src="" alt="" />
+        <h1>Fly Higher</h1>
+        <p>
+          It was never so easy to be in charge of an institution. The <b
+            >Lillenthal</b
+          >
+          school system takes your institution organization to new heights. Principals,
+          professors, students, you can all get some benefit from it.
+        </p>
+      </div>
+    </aside>
+  </div>
 </Layout>
