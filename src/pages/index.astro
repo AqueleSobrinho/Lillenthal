@@ -1,29 +1,54 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import logo from "../assets/logo.svg";
+import logo from "../assets/images/logo.svg";
+import landing from "../assets/images/landing.jpg";
 ---
 
 <Layout title="Lillenthal">
-  <div class="">
-    <main class="">
-      <img src={logo} alt="" />
-      <input type="text" placeholder="RM" />
-      <input type="text" placeholder="Password" />
-      Enter as
-      <select name="" id="">
-        <option value=""></option>
-        <option value=""></option>
+  <div class="bg-l-white min-h-screen flex flex-col-reverse xl:flex-row">
+    <main class="flex flex-col justify-center p-16 gap-4 flex-1">
+      <img src={logo} alt="" class="self-center h-12 mb-16" />
+      <label for="" class="text-xl">RM:</label>
+      <input
+        type="text"
+        placeholder="*******"
+        class="text-xl px-4 py-2 outline-l-red outline-2 rounded bg-transparent border-b-2"
+      />
+      <label for="" class="text-xl">Password:</label>
+      <input
+        type="text"
+        placeholder="**********"
+        class="text-xl px-4 py-2 outline-l-red outline-2 rounded bg-transparent border-b-2"
+      />
+      <label for="" class="text-xl">Enter as:</label>
+      <select
+        name=""
+        id=""
+        class="px-4 py-2 rounded bg-transparent border-b-2 text-right text-xl"
+      >
+        <option value="">Student</option>
+        <option value="">Professor</option>
       </select>
-      <button type="submit"> Sign In</button>
+      <button
+        class="bg-l-red text-l-white mt-16 py-3 px-20 self-center text-lg font-semibold rounded uppercase"
+        type="submit"
+      >
+        Sign In</button
+      >
     </main>
-    <aside class="">
-      <div>
-        <img src="" alt="" />
-        <h1>Fly Higher</h1>
-        <p>
-          It was never so easy to be in charge of an institution. The <b
-            >Lillenthal</b
-          >
+    <aside class="flex items-center justify-center m-8 relative">
+      <img
+        src={landing}
+        alt=""
+        class="w-full h-full object-cover rounded-tl-[4rem] rounded-br-[4rem]"
+      />
+      <div
+        class="absolute flex flex-col justify-end bg-gradient-to-t from-black z-1 p-8 h-full w-full bottom-0 rounded-tl-[4rem] rounded-br-[4rem]"
+      >
+        <h1 class="font-bold text-l-white text-2xl mb-2">Fly Higher</h1>
+        <p class="text-l-white">
+          It was never so easy to be in charge of an institution. The
+          <b class="text-l-red">Lillenthal</b>
           school system takes your institution organization to new heights. Principals,
           professors, students, you can all get some benefit from it.
         </p>
